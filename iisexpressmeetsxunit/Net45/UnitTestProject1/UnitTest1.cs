@@ -6,14 +6,13 @@ using Xunit;
 
 namespace UnitTestProject45
 {
-    [CollectionDefinition(RunIISExpressCollection.Const)]
+    [CollectionDefinition(Const)]
     public class A  : RunIISExpressCollection
     {
 
     }
 
-
-    [Collection("DbCollection")]
+    [Collection(RunIISExpressCollection.Const)]
     public class UnitTest1
     {
         public UnitTest1(RunIISExpress iis)

@@ -8,6 +8,7 @@ using Xunit;
 
 namespace iisexpressmeetsxunit.net45
 {    
+    
     public abstract class RunIISExpressCollection: ICollectionFixture<RunIISExpress>
     {
         public const string Const = "RunIISExpressCollection";
