@@ -60,6 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\iisexpressmeetsxunit.net45\iisexpressmeetsxunit.net45.csproj">
+      <Project>{08a44e93-7517-475e-953f-3b99c3434a88}</Project>
+      <Name>iisexpressmeetsxunit.net45</Name>
+    </ProjectReference>
     <ProjectReference Include="..\iisexpressmeetsxunit.portable\iisexpressmeetsxunit.portable.csproj">
       <Project>{61069380-5db9-4c14-84ec-291ea48e203e}</Project>
       <Name>iisexpressmeetsxunit.portable</Name>
