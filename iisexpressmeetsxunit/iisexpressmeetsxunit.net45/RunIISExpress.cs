@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace iisexpressmeetsxunit.portable
+namespace iisexpressmeetsxunit.net45
 {
     public class RunIISExpress: IDisposable
     {

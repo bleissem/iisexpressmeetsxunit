@@ -1,9 +1,10 @@
 ﻿
-using iisexpressmeetsxunit.portable;
+
+using iisexpressmeetsxunit.net45;
 using System;
 using Xunit;
 
-namespace UnitTestProject1
+namespace UnitTestProject45
 {
     [CollectionDefinition(RunIISExpressCollection.Const)]
     public class A  : RunIISExpressCollection

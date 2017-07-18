@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace iisexpressmeetsxunit.portable
+namespace iisexpressmeetsxunit.net45
 {    
     public abstract class RunIISExpressCollection: ICollectionFixture<RunIISExpress>
     {
