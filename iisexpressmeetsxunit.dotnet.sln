@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject.net45", "iisexpressmeetsxunit\UnitTestProject1\UnitTestProject.net45.csproj", "{9A95FA3B-E9AC-4E1D-9E96-0F9411ACD695}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject.net45", "iisexpressmeetsxunit\Net45\UnitTestProject1\UnitTestProject.net45.csproj", "{9A95FA3B-E9AC-4E1D-9E96-0F9411ACD695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iisexpressmeetsxunit.net45", "iisexpressmeetsxunit\iisexpressmeetsxunit.net45\iisexpressmeetsxunit.net45.csproj", "{08A44E93-7517-475E-953F-3B99C3434A88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iisexpressmeetsxunit.net45", "iisexpressmeetsxunit\Net45\iisexpressmeetsxunit.net45\iisexpressmeetsxunit.net45.csproj", "{08A44E93-7517-475E-953F-3B99C3434A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net45", "Net45", "{DB910360-F816-4D1F-95E2-AF3AA9343175}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A95FA3B-E9AC-4E1D-9E96-0F9411ACD695} = {DB910360-F816-4D1F-95E2-AF3AA9343175}
+		{08A44E93-7517-475E-953F-3B99C3434A88} = {DB910360-F816-4D1F-95E2-AF3AA9343175}
 	EndGlobalSection
 EndGlobal

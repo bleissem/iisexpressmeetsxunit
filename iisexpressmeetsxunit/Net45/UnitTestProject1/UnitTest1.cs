@@ -16,14 +16,17 @@ namespace UnitTestProject45
     [Collection("DbCollection")]
     public class UnitTest1
     {
-        public UnitTest1(RunIISExpress a)
+        public UnitTest1(RunIISExpress iis)
         {
-
+            m_IIS = iis;
         }
+
+        RunIISExpress m_IIS;
 
         [Fact]
         public void TestMethod1()
         {
+            Assert.True(m_IIS != null);
         }
     }
 }
