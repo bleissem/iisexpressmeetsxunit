@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -9,7 +10,7 @@ namespace iisexpressmeetsxunit.net45
     {
         public RunIISExpress()
         {
-
+            this.RunIIS();
         }
 
         ~RunIISExpress()
@@ -17,8 +18,39 @@ namespace iisexpressmeetsxunit.net45
             this.Dispose(false);
         }
 
+        private Process m_Process;
+
+        private void RunIIS()
+        {
+            IISConfig config = new IISConfig();
+
+            ProcessStartInfo psi = new ProcessStartInfo()
+            {
+                CreateNoWindow = true,
+                LoadUserProfile = true,
+                UseShellExecute = true
+            };
+
+            m_Process = Process.Start(psi);
+
+        }
+
         private void Dispose(bool disposing)
         {
+            if (null != m_Process)
+            {
+                try
+                {
+                    m_Process.Kill();
+                    m_Process.Dispose();
+                }
+                catch
+                {
+
+                }
+                
+                m_Process = null;
+            }
 
         }
 
